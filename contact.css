@@ -1,0 +1,75 @@
+/* Contact form */
+#contact_form {
+	padding-top: 15px;
+	font-size: 14px;
+	width: 60%;
+	max-width: 325px;
+}
+
+#after_submit {
+	display: none;
+}
+
+input, textarea {
+	width: 100%;
+	box-sizing: border-box;
+	line-height: 20px;
+	font-size: 14px;
+	margin: 7px 0 7px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: solid 1px #b6c7cb;
+}
+
+label.required:after {
+	content: "*";
+	color: red;
+}
+
+#submit_button {
+	width: 100px;
+	height: 35px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #21759b;
+	-webkit-box-shadow: 1px 1px 1px #888888;
+	-moz-box-shadow: 1px 1px 1px #888888;
+	box-shadow: 1px 1px 1px #888888;
+	border: solid 1px #11658b;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+}
+
+.error, .success {
+	display: none;
+	background-repeat: no-repeat;
+	background-position: 5px 50%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 3px 25px 3px 25px;
+	margin-bottom: 7px;
+}
+
+.error {
+	background-image: url('error.png');
+	background-color: #FFBABA;
+	color: #D8000C;
+}
+
+.success {
+	background-image: url('success.png');
+	background-color: #B7FBB9;
+	color: #044406;
+}
+
+.error p, .success p {
+	margin: 0 0 0 0;
+}
+
+.hp {
+	display: none;
+}
