@@ -8,7 +8,7 @@ I felt like creating a simple, no-frills contact form for my website. I don't ha
 Just place the files from this repo where you want them, and edit some of the content in send.php (CHANGEME section) to customize (e.g., specify send address and subject). Pretty straightforward.
 
 # Dependencies
--PHP (Duh)
--PHP mbstring module
--If using SELinux, ensure sending of mail from httpd is allowed - e.g., setsebool -P httpd_can_sendmail 1
+-PHP (Duh)  
+-PHP mbstring module  
+-If using SELinux, ensure sending of mail from httpd is allowed - e.g., setsebool -P httpd_can_sendmail 1  
 -Make sure the mail relay specified in your php.ini is configured properly and check that your firewall isn't blocking the necessary port(s)
