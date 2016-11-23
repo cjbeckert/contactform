@@ -12,3 +12,10 @@ Just place the files from this repo where you want them, and edit some of the co
 -PHP mbstring module  
 -If using SELinux, ensure sending of mail from httpd is allowed - e.g., setsebool -P httpd_can_sendmail 1  
 -Make sure the mail relay specified in your php.ini is configured properly and check that your firewall isn't blocking the necessary port(s)
+
+# Change History
+v1.1
+  "Prettied up" success/error message for our non-Javascript friends by leveraging GET requests to pass responses back to our form
+  
+v1.0
+  Initial release

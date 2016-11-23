@@ -1,6 +1,6 @@
 <?php
 	/*
-		Simple AJAX Contact Form v1.0
+		Simple AJAX Contact Form v1.1
 
 		Author: CJ Beckert - cjbeckert.com
 
@@ -103,7 +103,7 @@
 				// We want the user to think that the message sent successfully
 				$json[ "sendSuccess" ] = true;
 				if ( isset( $_POST[ "nojs" ] ) ) {
-					echo "Message sent successfully!";
+					header( "Location: index.php?response=1" );
 				}
 			}
 			else {
@@ -125,12 +125,12 @@
 
 					// Display a message for our non-JS friends
 					if ( isset( $_POST[ "nojs" ] ) ) {
-						echo "Message sent successfully!";
+						header( "Location: index.php?response=1" );
 					}
 				}
 				else {
 					if ( isset( $_POST[ "nojs" ] ) ) {
-						echo "An unexpected error occurred. Please try again.";
+						header( "Location: index.php?response=3" );
 					}
 				}
 			}
@@ -138,17 +138,7 @@
 		else {
 			// Print errors to client screen if not utilizing AJAX
 			if ( isset( $_POST[ "nojs" ] ) ) {
-				$errorResponse = "";
-				if ( $json[ "nameError" ] ) {
-					$errorResponse .= $json[ "nameError" ] . "\n";
-				}
-				if ( $json[ "emailError" ] ) {
-					$errorResponse .= $json[ "emailError" ] . "\n";
-				}
-				if ( $json[ "messageError" ] ) {
-					$errorResponse .= $json[ "messageError" ];
-				}
-				echo $errorResponse;
+				header( "Location: index.php?response=2" );
 			}
 		}
 		

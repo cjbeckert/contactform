@@ -10,6 +10,24 @@
 <body>
 	<form id="contact_form" action="send.php" method="POST">
 		<noscript><input type="hidden" name="nojs" value="true"></noscript>
+<?php
+		if ( isset( $_GET[ "response" ] ) ) {
+			if ( $_GET[ "response" ] == 1 ) {
+				echo '<span id="contactResponse" class="success" style="display:block"><p>Your message was sent successfully!</p></span>';
+			}
+			else {
+				$resp =  '<span id="contactResponse" class="error" style="display:block"><p>';
+				if ( $_GET[ "response" ] == 2 ) {
+					$resp .= 'Ensure that all required fields are complete and accurate.';
+				}
+				else {
+					$resp .= 'An unexpected error occurred. Please try again later.';
+				}
+				$resp .= '</p></span>';
+				echo $resp;
+			}
+		}
+?>
 		<span id="responseMessage"></span>
 		<div class="row">
 			<span id="nameError" class="error"></span>
