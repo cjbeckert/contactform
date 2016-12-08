@@ -35,7 +35,7 @@
 			<input type="text" name="name" id="name" class="input" maxlength="100" required /><br />
 		</div>
 		<div class = "row hp">
-			<label for="website">Do not put anything here:</label><br />
+			<label for="url">Do not put anything here:</label><br />
 			<input type="text" name="url" id="url" class="input" maxlength="256" /><br />
 		</div>
 		<div class="row">
