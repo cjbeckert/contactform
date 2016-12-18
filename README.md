@@ -14,11 +14,14 @@ Just place the files from this repo where you want them, and edit some of the co
 -Make sure the mail relay specified in your php.ini is configured properly and check that your firewall isn't blocking the necessary port(s)
 
 # Change History
+v1.3  
+The stylesheet was tailored to my custom application. Removed the width specifications.
+  
 v1.2  
-  Corrected a label reference in the contact form html. The label referenced "website" but the input ID is "url"
+Corrected a label reference in the contact form html. The label referenced "website" but the input ID is "url"
   
 v1.1  
-  "Prettied up" success/error message for our non-Javascript friends by leveraging GET requests to pass responses back to our form
+"Prettied up" success/error message for our non-Javascript friends by leveraging GET requests to pass responses back to our form
   
 v1.0  
-  Initial release
+Initial release

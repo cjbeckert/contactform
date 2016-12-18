@@ -1,9 +1,7 @@
 /* Contact form */
 #contact_form {
-	padding-top: 15px;
 	font-size: 14px;
-	width: 60%;
-	max-width: 325px;
+	width: 100%;
 }
 
 #after_submit {
